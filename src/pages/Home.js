@@ -40,8 +40,9 @@ const Home = () => {
 
                 <div
                     style={{
-                        marginRight: '5px',
-                        backgroundColor: 'yellow',
+                        width:'50vw',
+                        marginRight: '10px',
+                        // backgroundColor: 'black',
                         display: 'flex',
                         flexDirection: 'column',
                         flex: '1',
@@ -49,9 +50,9 @@ const Home = () => {
                 >{/*LEFT DIV */}
 
                     <div style={{
-                        flex: '1',
+                        // flex: '1',
                         marginBottom: '5px',
-                        height: '100%',
+                        height: '50px',
                         backgroundColor: 'blue'
                     }} >
                         <Eod_overview
@@ -61,22 +62,24 @@ const Home = () => {
                     </div>
 
                     <div style={{
-                        flex: '1',
+                        // flex: '1',
                         display: 'flex', width: '100%',
                         marginBottom: '5px',
                         // backgroundColor:'red',
-                        height: '100%',
+                        // height: '100%',
                         backgroundColor: 'red'
 
                     }}>
                         <div style={{
                             flex: '1',
                             width: '100%',
-                            marginRight: '2px',
+                            marginRight: '5px',
+                            backgroundColor:'pink',
+                            
 
                         }}>
                             <Table1 style={{
-                            height:'100%'
+                            height:'100px'
                         }}  />
                         </div>
                         <div

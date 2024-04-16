@@ -8,18 +8,22 @@ const eod_overview = () => {
   return (
     <div
       style={{
+        backgroundColor:'white',
         width: '100%',
         display: 'flex',
-        margin: '0px'
+        margin: '0px',
+        alignItems:'center'
       }}
     >  {/* TOP DIV */}
 <div
  style={{
+
 width:'40px',
 marginRight:'1px',
 // backgroundColor:'black',
 justifyContent:'center',
-paddingLeft:'10px'
+paddingLeft:'10px',
+paddingRight:'5px'
  }}
  >
       <div
@@ -28,8 +32,8 @@ paddingLeft:'10px'
           backgroundSize: 'cover',
           justifyContent: 'center',
           // backgroundColor:'grey',
-          height:'30px',
-          width:'30px',
+          height:'34px',
+          width:'34px',
           margin:0,
           marginTop:'1px'
           
@@ -42,16 +46,16 @@ paddingLeft:'10px'
       </div>{/* LEFT DIV */}
       <div
         style={{
-          // backgroundColor: '#000000',
           width: '100%',
-          padding: 0,
+          paddingRight: '0px',
           // height: '100%'
         }}
       >{/* RIGHT DIV */}
 
-        <Typography variant="h6" color='#E10074' sx={{
-          fontWeight: 'bold', textAlign: 'center', backgroundColor: '#000000',width: '100%',
-          margin: 0
+        <Typography variant="h5" color='#E10074' sx={{
+          display:'flex',alignItems:'center',justifyContent:'center',
+          fontWeight: 'bold', backgroundColor: '#000000',width: '100%',
+          margin: 0,height:'50px'
         }} m={1}>
           EOD OVERVIEW
         </Typography>

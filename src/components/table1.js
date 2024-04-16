@@ -15,7 +15,7 @@ const Table1 = () => {
             <div
                 style={{
                     width: '100%',
-                    height: '100%',
+                    height: '150px',
                     margin:0
                    
                 }}
@@ -25,10 +25,9 @@ const Table1 = () => {
                     style={{
                         backgroundColor: '#000000',
                         display:'block',
-                        
                     }}
                 >
-                    <Typography variant="subtitle1" color='#FFFFFF' sx={{ textAlign: 'center'  }} >
+                    <Typography variant="subtitle1" color='#FFFFFF' sx={{ textAlign: 'center',fontWeight:'bold'  }} >
                         TOTAL BOX UNITS (TODAY)
                     </Typography>
                 </div>
@@ -37,10 +36,7 @@ const Table1 = () => {
                 <div style={{
                     width: '100%',
                     display: 'flex',
-                    
-                    // backgroundColor: 'pink',
-                  
-                  
+                    // height:'55px',                  
                 }}>
 
                     <Card1 title="Consumer Voice" value={376} />

@@ -18,22 +18,26 @@ style={{
 
       <div
         style={{
+          display:'flex',
+          justifyContent:'center',
           border: '1px solid black',
           position: 'relative',
           textAlign:'center',
-          height:'40px',
-          width:'100%'
-          
+          height:'70px',
+          width:'100%',
+          backgroundColor:'white'
         }}
       >
         <div style={{
           display: 'flex',
+          paddingTop:'2px',
           paddingRight:'7px',
           paddingLeft:'7px',
-          // backgroundColor:'red',
+          justifyContent:'center',
+          textAlign:'center',
         }}>{/*Title DIv*/}
           <Typography style={{
-            color: '#E10074', fontWeight: 'bold', fontSize: '8px',
+            color: '#E10074', fontWeight: 'bold', fontSize: '12px',
             padding: 0
           }}> 
             {title}
@@ -42,13 +46,14 @@ style={{
         </div>
         <div
           style={{
+            
             position: 'absolute',
-            bottom: '0px',
+            bottom: '7px',
            paddingRight:'20px',
            paddingLeft:'20px',
  // Push this div to the bottom
           }}>
-          <Typography variant="h5" style={{ fontSize: '10px', fontWeight: 'bold' }}>
+          <Typography variant="h5" style={{ fontSize: '14px', fontWeight: 'bold' }}>
             {value}
           </Typography>
         </div>
