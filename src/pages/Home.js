@@ -41,16 +41,23 @@ const Home = () => {
                 <div
                     style={{
                         marginRight: '5px',
-                        // backgroundColor: 'yellow',
+                        backgroundColor: 'yellow',
+                        display: 'flex',
+                        flexDirection: 'column',
                         flex: '1',
                     }}
                 >{/*LEFT DIV */}
 
                     <div style={{
                         flex: '1',
-                        marginBottom: '5px'
+                        marginBottom: '5px',
+                        height: '100%',
+                        backgroundColor: 'blue'
                     }} >
-                        <Eod_overview />
+                        <Eod_overview
+                        style={{
+                            height:'100%'
+                        }} />
                     </div>
 
                     <div style={{
@@ -58,14 +65,19 @@ const Home = () => {
                         display: 'flex', width: '100%',
                         marginBottom: '5px',
                         // backgroundColor:'red',
+                        height: '100%',
+                        backgroundColor: 'red'
 
                     }}>
                         <div style={{
                             flex: '1',
                             width: '100%',
-                            marginRight: '2px'
+                            marginRight: '2px',
+
                         }}>
-                            <Table1 />
+                            <Table1 style={{
+                            height:'100%'
+                        }}  />
                         </div>
                         <div
                             style={{
@@ -89,9 +101,13 @@ const Home = () => {
                 </div> {/* LEFT DIV */}
 
 
-                <div style={{ width: '100%',
-                 marginBottom: '5px', marginLeft: '5px', flex: '1',
-                  }}>{/* Right DIV */}
+                <div style={{
+                    width: '100%',
+                    marginBottom: '5px', marginLeft: '5px', flex: '1',
+                    backgroundColor: 'green',
+                    display: 'flex',
+                    flexDirection: 'column',
+                }}>{/* Right DIV */}
 
                     <div>{/* Fields DIV */}
                         <Fields />
@@ -103,20 +119,30 @@ const Home = () => {
                         <Tables />
 
                     </div>{/* Tables DIV */}
-                
 
-                    {/* <div style={{ flex: '1',width: '100%' }}>{/*barChartHor*/}
-
-                    {/* </div> */} 
-                    <BarChartHor
+                    <div
                         style={{
-                            width: '100%',
-                            // other styles as needed
-                        }}
-                    />
+                            maxWidth: '700px',
+                            overflow: 'hidden'
+                        }}>
+                        <BarChartHor
+                        // style={{
+                        //     width: '100%',
+                        //     // other styles as needed
+                        // }}
+                        />
 
-                </div>{/* Right DIV */}
-              
+
+                    </div>
+                </div>
+                {/* <div style={{ flex: '1',width: '100%' }}>{/*barChartHor*/}
+
+                {/* </div> */}
+
+
+            </div>{/* Right DIV */}
+            <div>
+
 
             </div> {/*TOP DIV */}
 

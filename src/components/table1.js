@@ -15,6 +15,7 @@ const Table1 = () => {
             <div
                 style={{
                     width: '100%',
+                    height: '100%',
                     margin:0
                    
                 }}
@@ -36,6 +37,7 @@ const Table1 = () => {
                 <div style={{
                     width: '100%',
                     display: 'flex',
+                    
                     // backgroundColor: 'pink',
                   
                   
