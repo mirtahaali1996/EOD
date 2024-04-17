@@ -14,25 +14,26 @@ const Tables = () => {
     return (
         <><div style={{
             width: '100%',
-            border: '1px solid black',
+            // border: '1px solid black',
             display: 'flex'
 
         }}>
             <div
                 style={{
                     width: '100%',
+                    height:'100%',
                     border: '1px solid black'
                 }}> {/* Next Day Budget goals */}
                 <div
                     style={{
                         backgroundColor: '#000000',
-                        border: '1px solid black',
+                        // border: '1px solid black',
                         width: '100%',
 
                     }}
                 >{/* Heading Div */}
 
-                    <Typography variant="subtitle1" color='#FFFFFF' sx={{ textAlign: 'center' }} >
+                    <Typography variant="subtitle1" color='#FFFFFF' sx={{ fontWeight:'bold',textAlign: 'center' }} >
                         NEXT DAY BUDGET GOALS
                     </Typography>
 
@@ -69,12 +70,13 @@ const Tables = () => {
                     style={{
                         backgroundColor: '#FFFFFF',
                         border: '1px solid black',
+                        // borderRight:'none',
                         width: '100%',
-
+                        height:'28px'
                     }}
                 >{/* Heading Div */}
 
-                    <Typography variant="subtitle1" color='#000000' sx={{ textAlign: 'center', fontWeight: 'bold' }} >
+                    <Typography variant="subtitle1" color='#000000' sx={{ textAlign: 'center', fontWeight: 'bold',fontSize:'12px' }} >
                         MONTH-TO-DATE PERFORMANCE
                     </Typography>
 
@@ -85,9 +87,6 @@ const Tables = () => {
                     <div style={{
                         width: '100%',
                         display: 'flex',
-
-
-
                     }}>
 
                         <Card1 title="Consumer Voice" value={376} />
@@ -118,8 +117,7 @@ const Tables = () => {
                     style={{
                         backgroundColor: '#000000',
                         border: '1px solid black',
-                        width: '100%',
-
+                        width: '100%'
                     }}
                 >{/* Heading Div */}
 
@@ -131,8 +129,13 @@ const Tables = () => {
 
                 <div style={{
                     width: '100%',
+                    height:'70%',
                     display: 'block',
-                    padding:'5px' 
+                    padding:'5px',
+                    display:'flex',
+                    justifyContent:'center',
+                    alignItems:'center',
+                    flexDirection:'column'
                 }}>
                       <div>
                       <Typography variant="subtitle1" color='#000000' sx={{ textAlign: 'center', fontWeight:'bold' }} >

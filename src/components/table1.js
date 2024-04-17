@@ -15,7 +15,7 @@ const Table1 = () => {
             <div
                 style={{
                     width: '100%',
-                    height: '150px',
+                    height: '170px',
                     margin:0
                    
                 }}
@@ -32,7 +32,7 @@ const Table1 = () => {
                     </Typography>
                 </div>
              
-
+                <div >    
                 <div style={{
                     width: '100%',
                     display: 'flex',
@@ -84,6 +84,7 @@ const Table1 = () => {
 
 
             </div> {/* total box units */}
+            </div>
         </>
     );
 

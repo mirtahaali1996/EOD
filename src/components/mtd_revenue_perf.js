@@ -14,21 +14,25 @@ const MtdRevenue = () => {
                 style={{
                     width: '100%',
                     display: 'block',
-                    // backgroundColor: 'orange'
+                    // backgroundColor: 'orange',
                 }}
             >       {/* Main Div */}
 
 
                 <div
                     style={{
+                        display:'flex',
+                        alignItems:'center',
+                        justifyContent:'center',
                         backgroundColor: '#E10074',
                         border: '1px solid black',
                         width: '100%',
-
+                        height:'35px',
+                        
                     }}
                 >{/* Heading Div */}
 
-                    <Typography variant="subtitle1" color='#FFFFFF' sx={{ textAlign: 'center' }} >
+                    <Typography variant="subtitle1" color='#FFFFFF' sx={{ textAlign: 'center',fontWeight:'bold' }} >
                         MTD REVENUE PERFORMANCE
                     </Typography>
 
@@ -37,41 +41,45 @@ const MtdRevenue = () => {
                 <div
                 style={{
                     width: '100%',
+                    contain:'content',  
                     // backgroundColor:'blue',
-                    display: 'flex',
-                    height:'100px',
+                    display:'flex',
+                    flexWrap:'wrap',
+                    height:'180px',
                     }}
                 >{/*hori*/}
 
                     <div    style={{
-                        width: '100%',
+                        // width: '100%',
                         display: 'flex',
                         justifyContent: 'center',
                         alignContent:'center',
-                        border: '1px solid black',
-                        paddingTop:'3px',
-                        paddingBottom:'3px'
-                        // paddingLeft:'20px'
+                        borderLeft: '1px solid black',
+                        borderBottom: '1px solid black',                       
+                        padding:'11px 0px',
+                        contain:'content'
                   }}
                     >
+                    <div style={{padding:'0px 35px'}}>
                     <DoughnutChart />
-                    
+                    </div>
                     </div>
 
                     <div    style={{
-                        width: '100%',
+                        // width: '100%',
                         display: 'flex',
                         justifyContent: 'center',
                         alignContent:'center',
-                        border: '1px solid black',
-                        paddingTop:'3px',
-                        paddingBottom:'3px'
-
+                        borderLeft: '0.5px solid black',
+                        borderRight: '1px solid black',
+                        borderBottom: '1px solid black',
+                        padding:'11px 0px',
                         // paddingLeft:'20px'
                   }}
                     >
+                  <div style={{padding:'0px 35px'}}>
                     <DoughnutChart />
-                    
+                    </div>
                     </div>
 
                 </div>{/*hori*/}

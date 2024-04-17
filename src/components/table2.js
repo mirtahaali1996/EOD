@@ -21,7 +21,7 @@ const Table2 = () => {
                         display: 'block'
                     }}
                 >
-                    <Typography variant="subtitle1" color='#FFFFFF' sx={{ textAlign: 'center' }} >
+                    <Typography variant="subtitle1" color='#FFFFFF' sx={{ textAlign: 'center',fontWeight:'bold' }} >
                         TODAY'S SALES
                     </Typography>
                 </div> {/*Heading */}

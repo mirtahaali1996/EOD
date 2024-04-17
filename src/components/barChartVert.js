@@ -26,50 +26,77 @@ const BarChartVert = () => {
                 borderWidth: 1,
                 barPercentage: 0.6, // Adjust this value to control the width of the bars
                 categoryPercentage: 0.6,
-
+                
             }
         ]
 
     }
 
+    // const options = {
+    //     scales: {
+    //         y: {
+    //             beginAtZero: true,
+
+    //         },
+    //         y: {
+    //             grid: {
+    //                 color: 'rgb(157, 155, 155)'
+    //             }
+    //         }
+
+    //     },
+    // };
     const options = {
         scales: {
             y: {
                 beginAtZero: true,
-
-            },
-            y: {
+                ticks: {
+                    color: '#FFFFFF', // Set y-axis label color to white
+                },
                 grid: {
                     color: 'rgb(157, 155, 155)'
                 }
+            },
+            x: {
+                ticks: {
+                    color: '#FFFFFF', // Set x-axis label color to white
+                }
             }
-
         },
     };
+    
     return (
         <div
             style={{
                 width: '100%',
-                backgroundColor: 'purple',
+                // backgroundColor: 'purple',
                 justifyContent: 'center',
                 display: 'block',
             }}
 
         >{/*Main Div */}
             <div
-                style={{
-                    width: '100%',
-                    backgroundColor: '#E10074',
-                    display: 'block'
-                }}
-            >
-                <Typography variant="subtitle1" color='#FFFFFF' sx={{ textAlign: 'center' }} >
+                    style={{
+                        display:'flex',
+                        alignItems:'center',
+                        justifyContent:'center',
+                        backgroundColor: '#E10074',
+                        border: '1px solid black',
+                        width: '100%',
+                        height:'35px',
+                        
+                    }}
+                >{/* Heading Div */}
+
+                    <Typography variant="subtitle1" color='#FFFFFF' sx={{ textAlign: 'center',fontWeight:'bold' }} >
                     DAILY GOALS PERFORMANCE BY REGION
-                </Typography>
-            </div>{/*Heading Div */}
+                    </Typography>
+
+                </div> {/*Heading */}
 
             <div
                 style={{
+                    borderRight:'1px solid black',
                     width: '100%',
                     backgroundColor: '#000000',
                     height:'200px',

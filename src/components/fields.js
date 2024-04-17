@@ -13,12 +13,13 @@ const Fields = () => {
     return (
         <>
             <div
-                style={{ display: 'flex' }}
+                style={{ display: 'flex',backgroundColor:'white',marginBottom:'10px' }}
             >{/*Main Div */}
                 <div
                     style={{
                         width: '100%',
-                        border: '1px solid black',
+                        border: '2px solid black',
+                        borderRight:'1px solid black',
                         display: 'block',
                         padding: '5px'
                     }}
@@ -28,7 +29,7 @@ const Fields = () => {
                         style={{
                             width: '100%'
                         }}>
-                        <select name="cars" id="cars" style={{ width: '100%' }}>
+                        <select name="cars" id="cars" style={{ width: '100%',border:'none',color:'#E10074',fontWeight:'bold',outline:'none'  }}>
                             <option value="Region">Region</option>
                             <option value="saab">Saab</option>
                             <option value="mercedes">Mercedes</option>
@@ -40,7 +41,7 @@ const Fields = () => {
                             width: '100%',
                             marginTop:'3px'
                         }}>
-                        <select name="cars" id="cars" style={{ width: '100%',  }}>
+                        <select name="cars" id="cars" style={{ width: '100%',color:'#E10074',padding:'2px',outline:'none',borderColor:'#cfcdcd'   }}>
                             <option value="All">All</option>
                             <option value="saab">Saab</option>
                             <option value="mercedes">Mercedes</option>
@@ -53,7 +54,9 @@ const Fields = () => {
                 <div
                     style={{
                         width: '100%',
-                        border: '1px solid black',
+                        border: '2px solid black',
+                        borderLeft:'1px solid black',
+                        borderRight:'1px solid black',
                         display: 'block',
                         padding: '5px'
                     }}
@@ -64,7 +67,7 @@ const Fields = () => {
                             width: '100%'
                             
                         }}>
-                        <select name="cars" id="cars" style={{ width: '100%' }}>
+                        <select name="cars" id="cars" style={{ width: '100%',border:'none',color:'#E10074',fontWeight:'bold',outline:'none'  }}>
                             <option value="District">District</option>
                             <option value="saab">Saab</option>
                             <option value="mercedes">Mercedes</option>
@@ -76,7 +79,7 @@ const Fields = () => {
                             width: '100%',
                             marginTop:'3px'
                         }}>
-                        <select name="cars" id="cars" style={{ width: '100%' }}>
+                        <select name="cars" id="cars" style={{ width: '100%',color:'#E10074',padding:'2px',outline:'none',borderColor:'#cfcdcd'   }}>
                             <option value="All">All</option>
                             <option value="saab">Saab</option>
                             <option value="mercedes">Mercedes</option>
@@ -89,7 +92,9 @@ const Fields = () => {
                 <div
                     style={{
                         width: '100%',
-                        border: '1px solid black',
+                        border: '2px solid black',
+                        borderLeft:'1px solid black',
+                        borderRight:'1px solid black',
                         display: 'block',
                         padding: '5px'
                     }}
@@ -100,7 +105,7 @@ const Fields = () => {
                             width: '100%'
                         }}>
                         <select name="cars" id="cars" style={{ width: '100%',
-                        backgroundColor: 'transparent', color: '#E10074',border: '1px solid grey' }}>
+                        border:'none',color:'#E10074',fontWeight:'bold',outline:'none'  }}>
                             <option value="volvo">Store Name</option>
                             <option value="saab">Saab</option>
                             <option value="mercedes">Mercedes</option>
@@ -113,7 +118,7 @@ const Fields = () => {
                             marginTop:'3px'
 
                         }}>
-                        <select name="cars" id="cars" style={{ width: '100%' 
+                        <select name="cars" id="cars" style={{ width: '100%',color:'#E10074',padding:'2px',outline:'none' ,borderColor:'#cfcdcd'
                         }}>
                             <option value="volvo">All</option>
                             <option value="saab">Saab</option>
@@ -127,7 +132,8 @@ const Fields = () => {
                 <div
                     style={{
                         width: '100%',
-                        border: '1px solid black',
+                        border: '2px solid black',
+                        borderLeft:'1px solid black',
                         display: 'block',
                         padding: '5px'
                     }}
@@ -137,7 +143,7 @@ const Fields = () => {
                         style={{
                             width: '100%'
                         }}>
-                        <select name="cars" id="cars" style={{ width: '100%' }}>
+                        <select name="cars" id="cars" style={{ width: '100%',border:'none',color:'#E10074',fontWeight:'bold',outline:'none'  }}>
                             <option value="volvo">Sales Date</option>
                             <option value="saab">Saab</option>
                             <option value="mercedes">Mercedes</option>
@@ -150,7 +156,7 @@ const Fields = () => {
                             marginTop:'3px'
 
                         }}>
-                        <select name="cars" id="cars" style={{ width: '100%' }}>
+                        <select name="cars" id="cars" style={{ width: '100%',color:'#E10074',padding:'2px',outline:'none',borderColor:'#cfcdcd'  }}>
                             <option value="volvo">All</option>
                             <option value="saab">Saab</option>
                             <option value="mercedes">Mercedes</option>

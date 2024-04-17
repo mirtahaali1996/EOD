@@ -19,7 +19,7 @@ const DoughnutChart = () => {
                 data: [3, 6],
                 backgroundColor: ['#E10074', '#E4E5E7'],
                 borderColor: ['#E10074', '#E4E5E7'],
-                cutout: '80%',
+                cutout: '75%',
                 circumference: 180,
                 rotation: 270
 
