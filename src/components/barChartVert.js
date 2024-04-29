@@ -23,7 +23,7 @@ const BarChartVert = () => {
                 data: [6, 4,3.8],
                 backgroundColor:'#FFFFFF',
                 borderColor: 'black',
-                borderWidth: 1,
+                // borderWidth: 1,
                 barPercentage: 0.6, // Adjust this value to control the width of the bars
                 categoryPercentage: 0.6,
                 
@@ -99,7 +99,7 @@ const BarChartVert = () => {
                     borderRight:'1px solid black',
                     width: '100%',
                     backgroundColor: '#000000',
-                    height:'200px',
+                    height:'300px',
                     display:'flex',
                 }}>{/*Bar Div */}
 
@@ -107,7 +107,8 @@ const BarChartVert = () => {
                     data={data}
                     options={{
             ...options,
-            maintainAspectRatio: false, // Add this line to allow the Bar to fill the entire div
+            responsive: true,
+            // maintainAspectRatio: false, // Add this line to allow the Bar to fill the entire div
         }}>
                 </Bar>
             </div>

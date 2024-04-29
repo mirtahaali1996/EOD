@@ -20,10 +20,14 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import { useMediaQuery } from "react-responsive";
+
 
 
 
 const Home = () => {
+    
+    const width_700px = useMediaQuery({ query: "(min-width: 700px)" });
 
     return (
 
@@ -32,28 +36,37 @@ const Home = () => {
             <div
                 style={{
                     display: 'flex',
+                    // flexDirection: width_700px? 'row':'column',
                     // backgroundColor: 'green',
                     // padding: '2px',
                     // height: ''
-
+                    justifyContent:'center',
+                    // alignItems: width_700px? 'center':'center'
                 }}>{/*TOP DIV */}
 
                 <div
                     style={{
-                        width:'50vw',
-                        marginRight: '10px',
-                        // backgroundColor: 'black',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        flex: '1',
+                        // // width:'50vw',
+                        // marginRight: '10px',
+                        // // backgroundColor: 'black',
+                        // display: 'flex',
+                        // flexDirection: 'column',
+                        // flex: '1',
+                        // contain:'content'
+
+                        // width: '100%',
+                        marginBottom: '5px', marginLeft: '5px', flex: '1',
+                        // backgroundColor: 'green',
+                        // display: 'flex',
+                        // flexDirection: 'column',
                     }}
                 >{/*LEFT DIV */}
-
+            
                     <div style={{
                         // flex: '1',
                         marginBottom: '5px',
                         height: '50px',
-                        backgroundColor: 'blue'
+                        // backgroundColor: 'blue'
                     }} >
                         <Eod_overview
                         style={{
@@ -63,7 +76,7 @@ const Home = () => {
 
                     <div style={{
                         contain:'content',
-                        // flex: '1',
+                        flex: '1',
                         display: 'flex', width: '100%',
                         marginBottom: '5px',
                         // backgroundColor:'red',
@@ -100,7 +113,7 @@ const Home = () => {
                         <MtdRevenue />
                     </div>
 
-                    <div style={{ flex: '1', width: '100%' }}>
+                    <div style={{ display: 'flex',flex: '1', width: '100%' }}>
                         <BarChartVert />
                     </div>
                 </div> {/* LEFT DIV */}
@@ -119,7 +132,7 @@ const Home = () => {
                     </div>{/* Fields DIV */}
                 <div style={{height:'200px'}}>
                     <div
-                        style={{height:'100%', flex: '1', width: '100%', marginBottom: '5px',backgroundColor:'pink'}}>{/* Tables DIV */}
+                        style={{height:'100%', flex: '1', width: '100%', marginBottom: '5px'}}>{/* Tables DIV */}
 
                         <Tables />
 
