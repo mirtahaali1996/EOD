@@ -59,7 +59,7 @@ const BarChartHor = () => {
     <div
       style={{
         width: '99%',
-        height: '500px',
+        height: '509px',
         // Set the height to take the full height of the viewport
         //   backgroundColor: '#000000',
         display: 'flex',

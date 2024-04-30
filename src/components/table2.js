@@ -9,6 +9,7 @@ const Table2 = () => {
         <>
             <div
                 style={{
+                    // backgroundColor:'pink',
                     width: '100%',
                     margin:0
                 }}

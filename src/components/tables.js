@@ -22,7 +22,8 @@ const Tables = () => {
                 style={{
                     width: '100%',
                     height:'100%',
-                    border: '1px solid black'
+                    border: '1px solid black',
+                    margin:'0px 10px'
                 }}> {/* Next Day Budget goals */}
                 <div
                     style={{
@@ -60,11 +61,14 @@ const Tables = () => {
                     </div>
                 </div> {/* Center Div */}
             </div> {/* Next Day Budget goals */}
+
+
             <div
                 style={{
                     width: '100%',
                     border: '1px solid black',
-                    marginLeft: '2px'
+                    margin:'0px 10px'
+
                 }}> {/* Month to date */}
                 <div
                     style={{
@@ -111,7 +115,9 @@ const Tables = () => {
                 style={{
                     width: '100%',
                     border: '1px solid black',
-                    marginLeft: '2px'
+                    // marginLeft: '2px'
+                    margin:'0px 10px'
+
                 }}> {/* DATA THROUGH */}
                 <div
                     style={{

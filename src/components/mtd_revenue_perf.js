@@ -12,9 +12,11 @@ const MtdRevenue = () => {
 
             <div
                 style={{
+                    height:'100%',
                     width: '100%',
                     display: 'block',
                     // backgroundColor: 'orange',
+                    contain:'content'
                 }}
             >       {/* Main Div */}
 
@@ -25,9 +27,10 @@ const MtdRevenue = () => {
                         alignItems:'center',
                         justifyContent:'center',
                         backgroundColor: '#E10074',
-                        border: '1px solid black',
+                        // border: '1px solid black',
                         width: '100%',
-                        height:'35px',
+                        // height:'30px',
+                        borderBottom:'1px solid black'
                         
                     }}
                 >{/* Heading Div */}
@@ -45,39 +48,41 @@ const MtdRevenue = () => {
                     // backgroundColor:'blue',
                     display:'flex',
                     flexWrap:'wrap',
-                    height:'180px',
+                    height:'100%',
                     }}
                 >{/*hori*/}
 
                     <div    style={{
-                        // width: '100%',
+                        height:'100%',
+                        width: '50%',
                         display: 'flex',
                         justifyContent: 'center',
                         alignContent:'center',
-                        borderLeft: '1px solid black',
-                        borderBottom: '1px solid black',                       
+                        borderRight: '1px solid black',
+                        // borderBottom: '1px solid black',                       
                         padding:'11px 0px',
-                        contain:'content'
+                        contain:'content',
+                        // backgroundColor:'purple',
                   }}
                     >
-                    <div style={{padding:'0px 35px'}}>
+                    <div style={{padding:'0px 35px',width:'200px'}}>
                     <DoughnutChart />
                     </div>
                     </div>
 
                     <div    style={{
-                        // width: '100%',
+                        width: '49%',
                         display: 'flex',
                         justifyContent: 'center',
                         alignContent:'center',
-                        borderLeft: '0.5px solid black',
-                        borderRight: '1px solid black',
-                        borderBottom: '1px solid black',
+                        // borderLeft: '0.5px solid black',
+                        // borderRight: '1px solid black',
+                        // borderBottom: '1px solid black',
                         padding:'11px 0px',
                         // paddingLeft:'20px'
                   }}
                     >
-                  <div style={{padding:'0px 35px'}}>
+                  <div style={{padding:'0px 35px',width:'200px'}}>
                     <DoughnutChart />
                     </div>
                     </div>

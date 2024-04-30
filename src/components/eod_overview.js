@@ -46,13 +46,14 @@ paddingRight:'5px'
       </div>{/* LEFT DIV */}
       <div
         style={{
+          border:'2px solid black',
           width: '100%',
           paddingRight: '0px',
           // height: '100%'
         }}
       >{/* RIGHT DIV */}
 
-        <Typography variant="h5" color='#E10074' sx={{
+        <Typography variant="h4" color='#E10074' sx={{
           display:'flex',alignItems:'center',justifyContent:'center',
           fontWeight: 'bold', backgroundColor: '#000000',width: '100%',
           margin: 0,height:'50px'

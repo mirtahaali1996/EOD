@@ -35,7 +35,11 @@ const Home = () => {
         <>
             <div
                 style={{
+                    contain:'content',
+                    marginTop:'2px',
+                    // paddingBottom:'0px',
                     display: 'flex',
+                    height:'99vh',
                     // flexDirection: width_700px? 'row':'column',
                     // backgroundColor: 'green',
                     // padding: '2px',
@@ -46,16 +50,22 @@ const Home = () => {
 
                 <div
                     style={{
-                        // // width:'50vw',
                         // marginRight: '10px',
                         // // backgroundColor: 'black',
                         // display: 'flex',
                         // flexDirection: 'column',
                         // flex: '1',
                         // contain:'content'
-
-                        // width: '100%',
-                        marginBottom: '5px', marginLeft: '5px', flex: '1',
+                        // height:'20vh !important',
+                        width: '50vw',
+                        overflow:'hidden',
+                        // backgroundColor:'red',
+                        // margin:'5px',
+                        marginLeft:'15px',
+                        marginRight: '15px',   
+                        flex: '1',
+                        contain:'content',
+                        padding:'2px',
                         // backgroundColor: 'green',
                         // display: 'flex',
                         // flexDirection: 'column',
@@ -64,8 +74,9 @@ const Home = () => {
             
                     <div style={{
                         // flex: '1',
-                        marginBottom: '5px',
-                        height: '50px',
+                        margin:'5px 0px',
+                        height: '60px',
+                        contain:'content'
                         // backgroundColor: 'blue'
                     }} >
                         <Eod_overview
@@ -78,12 +89,14 @@ const Home = () => {
                         contain:'content',
                         flex: '1',
                         display: 'flex', width: '100%',
-                        marginBottom: '5px',
+                        marginBottom: '40px',
+                        // border:'1px solid black',
                         // backgroundColor:'red',
                         // height: '100%',
                         // backgroundColor: 'red',
                         flexWrap:'wrap',
-                        gap:'5px'
+                        gap:'5px',
+                        contain:'content'
                     }}>
                         <div style={{
                             flex: '1',
@@ -109,11 +122,11 @@ const Home = () => {
                     </div>
 
 
-                    <div style={{ flex: '1', width: '100%' }}>
+                    <div style={{ flex: '1', width: '100%', margin:'40px 0px',height:'150px',contain:'content',border:'1px solid black', }}>
                         <MtdRevenue />
                     </div>
 
-                    <div style={{ display: 'flex',flex: '1', width: '100%' }}>
+                    <div style={{ display: 'flex',flex: '1', width: '100%',marginTop:'40px',contain:'content',height:'330px',backgroundColor:'gray',border:'1px solid black' }}>
                         <BarChartVert />
                     </div>
                 </div> {/* LEFT DIV */}
@@ -121,16 +134,18 @@ const Home = () => {
 
                 <div style={{
                     width: '100%',
-                    marginBottom: '5px', marginLeft: '5px', flex: '1',
+                    marginLeft:'15px',
+                    marginRight: '15px',  
+                    flex: '1',
                     // backgroundColor: 'green',
                     display: 'flex',
                     flexDirection: 'column',
                 }}>{/* Right DIV */}
 
-                    <div>{/* Fields DIV */}
+                    <div style={{marginTop:'5px'}}>{/* Fields DIV */}
                         <Fields />
                     </div>{/* Fields DIV */}
-                <div style={{height:'200px'}}>
+                <div style={{height:'180px'}}>
                     <div
                         style={{height:'100%', flex: '1', width: '100%', marginBottom: '5px'}}>{/* Tables DIV */}
 
@@ -141,7 +156,7 @@ const Home = () => {
                     <div
                         style={{
                             // backgroundColor:'orange',
-                            maxWidth: '740px',
+                            maxWidth: '100%',
                             // height:'700px',
                             overflow: 'hidden'
                         }}>

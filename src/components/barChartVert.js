@@ -69,8 +69,8 @@ const BarChartVert = () => {
         <div
             style={{
                 width: '100%',
+                height:'100%',
                 // backgroundColor: 'purple',
-                justifyContent: 'center',
                 display: 'block',
             }}
 
@@ -81,9 +81,9 @@ const BarChartVert = () => {
                         alignItems:'center',
                         justifyContent:'center',
                         backgroundColor: '#E10074',
-                        border: '1px solid black',
+                        borderBottom: '1px solid black',
                         width: '100%',
-                        height:'35px',
+                        height:'25px',
                         
                     }}
                 >{/* Heading Div */}
@@ -99,7 +99,7 @@ const BarChartVert = () => {
                     borderRight:'1px solid black',
                     width: '100%',
                     backgroundColor: '#000000',
-                    height:'300px',
+                    height:'294px',
                     display:'flex',
                 }}>{/*Bar Div */}
 
@@ -107,8 +107,8 @@ const BarChartVert = () => {
                     data={data}
                     options={{
             ...options,
-            responsive: true,
-            // maintainAspectRatio: false, // Add this line to allow the Bar to fill the entire div
+            // responsive: true,
+            maintainAspectRatio: false, // Add this line to allow the Bar to fill the entire div
         }}>
                 </Bar>
             </div>

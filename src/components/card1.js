@@ -23,14 +23,15 @@ style={{
           border: '1px solid black',
           position: 'relative',
           textAlign:'center',
-          height:'70px',
+          height:'55px',
           width:'100%',
           backgroundColor:'white'
         }}
       >
         <div style={{
+          // backgroundColor:'orange',
           display: 'flex',
-          paddingTop:'2px',
+          // paddingTop:'1px',
           paddingRight:'7px',
           paddingLeft:'7px',
           justifyContent:'center',
@@ -46,9 +47,8 @@ style={{
         </div>
         <div
           style={{
-            
             position: 'absolute',
-            bottom: '7px',
+            bottom: '1px',
            paddingRight:'20px',
            paddingLeft:'20px',
  // Push this div to the bottom
